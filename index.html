@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Web Project 2</title>
 </head>
@@ -31,16 +34,25 @@
     </div>
     <div class="container">
         <div class="current-weather">
-            <div>
-                <span class="material-symbols-outlined sunny">sunny</span>
-            </div>
-            <div class="current-info">
-                <div class="data"><span>Low:</span><span>59</span></div>
-                <div class="data"><span>High:</span><span>63</span></div>
-                <div class="data"><span>Humidity:</span><span>59</span></div>
-                <div class="data"><span>Pressure:</span><span>59</span></div>
+            <div class="current-content">
+                <div class="current-icon">
+                    <span class="material-symbols-outlined sunny">sunny</span>
+                    <div class="current-temp">
+                        <p>59°</p>
+                        <p>Sunny</p>
+                        <p>Feels like 70°</p>
+                    </div>
+                </div>
+                <div class="current-info">
+                    <div class="data"><span><strong>Low:</strong></span><span>59</span></div>
+                    <div class="data"><span><strong>High:</strong></span><span>63</span></div>
+                    <div class="data"><span><strong>Humidity:</strong></span><span>59</span></div>
+                    <div class="data"><span><strong>Pressure:</strong></span><span>59</span></div>
+                </div>
             </div>
         </div>
+        <div class="weather-forecast"></div>
+        <div class="news"></div>
     </div>
     <script src="./index.js"></script>
 </body>
