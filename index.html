@@ -46,17 +46,23 @@
                 <div class="current-info">
                     <div class="data"><span><strong>Low:</strong></span><span>59°</span></div>
                     <div class="data"><span><strong>High:</strong></span><span>63°</span></div>
-                    <div class="data"><span><strong>Humidity:</strong></span><span>59°</span></div>
-                    <div class="data"><span><strong>Pressure:</strong></span><span>59°</span></div>
+                    <div class="data-extra">
+                        <div><span class="material-symbols-outlined">humidity_mid</span><span>10%</span></div>
+                        <div><span class="material-symbols-outlined">air</span><span>5mph</span></div>
+                    </div>
                 </div>
+            </div>
+            <div class="location">
+                <div>Saint Paul, MN</div>
+                <div>Ramsey County</div>
             </div>
         </div>
         <div class="weather-forecast">
             <div class="forecast-header">
-                <span>Day</span>
+                <span>Days</span>
                 <div class="toggle">
                     <span class="material-symbols-outlined toggle-icon">circle</span></div>
-                <span>Week</span>
+                <span>Hourly</span>
             </div>
             <div class="forecast-content">
                 <div class="forecast-data">
@@ -109,7 +115,11 @@
                 </div>
             </div>
         </div>
-        <div class="news"></div>
+        <div class="news">
+            <div class="hourly-content">
+                <div class="hourly-header"></div>
+            </div>
+        </div>
     </div>
     <script src="./index.js"></script>
 </body>
