@@ -6,7 +6,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    
 }
 
 .header {
@@ -60,12 +59,14 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: repeat(5, 300px);
+    grid-template-rows: repeat(5, 20%);
     grid-gap: 20px;
-    min-width: 1500px;
+    max-width: 1500px;
+    margin-right: 80px;
     height: 600px;
     padding: 20px;
+    font-family: "Outfit", sans-serif;
 }
 
 /* main */
@@ -76,7 +77,6 @@ body {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    font-family: "Outfit", sans-serif;
     border: 2px solid black;
 }
 
@@ -127,7 +127,7 @@ body {
     gap: 10px;
 }
 
-.location {
+.location-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,14 +144,26 @@ body {
     background-color: darkgray;
 }
 
-.location> :nth-child(1) {
+.location-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     height: 40px;
     font-size: 2rem;
+}
+
+#city {
+    max-width: 275px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    
+}
+
+#county {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .location> :nth-child(2) {
@@ -217,12 +229,24 @@ body {
     animation: toggle-left 1s forwards;
 }
 
-.forecast-content {
+/* animation for daily toggle */
+@keyframes daily {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.forecast-daily.active {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 10px;
     height: auto;
+
+    animation: daily 2s forwards;
+}
+
+.forecast-daily {
+    display: none;
 }
 
 .forecast-data {
@@ -235,8 +259,29 @@ body {
     gap: 30px;
 }
 
-.forecast-content hr {
-    height: 175px;
+.forecast-daily hr {
+    margin: 0;
+    height: 170px;
+}
+
+/* animation for hourly toggle */
+@keyframes hourly {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.forecast-hourly.active {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+    height: auto;
+
+    animation: hourly 2s forwards;
+}
+
+.forecast-hourly {
+    display: none;
 }
 
 .day {
@@ -258,6 +303,48 @@ body {
     display: grid;
     grid-column: 4/6;
     grid-row: 1/6;
+    padding: 20px;
     border-radius: 10px;
     border: 2px solid black;
+}
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.news-header {
+    align-self: flex-start;
+}
+
+.news-header h1 {
+    margin-top: 0;
+}
+
+.news-image {
+    width: 550px;
+    height: auto;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+}
+
+.news-data {
+    width: 550px;
+    height: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-content button {
+    align-self: flex-end;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0;
 }
