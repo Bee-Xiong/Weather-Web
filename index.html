@@ -11,179 +11,205 @@
     <title>Web Project 2</title>
 </head>
 <body>
-    <div class="header">
-        <h1>LOGO</h1>
-        <div class="navbar">
-            <div class="nav">
-                <button>*</button>
-                <button>*</button>
-                <button>*</button>
-                <button>*</button>
-                <button>Button</button>
-                <button class="drop-down" id="btn1">Button<span class="material-symbols-outlined">arrow_drop_down</span></button>
-            </div>
-            <div class="sub-menu">
-                <a href="*">Link</a>
-                <a href="*">Link</a>
-                <a href="*">Link</a>
-                <a href="*">Link</a>
-                <a href="*">Link</a>
-                <a href="*">Link</a>
-            </div>
-        </div>
-    </div>
     <div class="container">
-        <div class="current-weather">
-            <div class="current-content">
-                <div class="current-icon">
-                    <span class="material-symbols-outlined sunny">sunny</span>
-                    <div class="current-temp">
-                        <p>59°</p>
-                        <p>Sunny</p>
-                        <p>Feels like 70°</p>
+        <div class="header">
+            <h1>LOGO</h1>
+            <div class="navbar">
+                <div class="nav">
+                    <button>*</button>
+                    <button>*</button>
+                    <button>*</button>
+                    <button>*</button>
+                    <button>Button</button>
+                    <button class="drop-down" id="btn1">Button<span class="material-symbols-outlined">arrow_drop_down</span></button>
+                </div>
+                <div class="sub-menu">
+                    <a href="*">Link</a>
+                    <a href="*">Link</a>
+                    <a href="*">Link</a>
+                    <a href="*">Link</a>
+                    <a href="*">Link</a>
+                    <a href="*">Link</a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="current-weather">
+                <div class="current-content">
+                    <div class="current-icon">
+                        <span class="material-symbols-outlined sunny">sunny</span>
+                        <div class="current-temp">
+                            <p>59°</p>
+                            <p>Sunny</p>
+                            <p>Feels like 70°</p>
+                        </div>
+                    </div>
+                    <div class="current-info">
+                        <div class="data"><span><strong>Low:</strong></span><span>59°</span></div>
+                        <div class="data"><span><strong>High:</strong></span><span>63°</span></div>
+                        <div class="data-extra">
+                            <div><span class="material-symbols-outlined">humidity_mid</span><span>10%</span></div>
+                            <div><span class="material-symbols-outlined">air</span><span>5mph</span></div>
+                        </div>
                     </div>
                 </div>
-                <div class="current-info">
-                    <div class="data"><span><strong>Low:</strong></span><span>59°</span></div>
-                    <div class="data"><span><strong>High:</strong></span><span>63°</span></div>
-                    <div class="data-extra">
-                        <div><span class="material-symbols-outlined">humidity_mid</span><span>10%</span></div>
-                        <div><span class="material-symbols-outlined">air</span><span>5mph</span></div>
+                <div class="location-content">
+                    <div class="location-info">
+                        <div id="city">Saint Paul</div>
+                        <div id="state">, MN</div>
+                    </div>
+                    <div id="county">Ramsey County</div>
+                </div>
+            </div>
+            <div class="weather-forecast">
+                <div class="forecast-header">
+                    <span>Daily</span>
+                    <div class="toggle">
+                        <span class="material-symbols-outlined toggle-icon">circle</span></div>
+                    <span>Hourly</span>
+                </div>
+                <div class="forecast-daily active">
+                    <div class="forecast-data">
+                        <div class="day">SUN</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <hr/>
+                    <div class="forecast-data">
+                        <div class="day">MON</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <hr/>
+                    <div class="forecast-data">
+                        <div class="day">TUS</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <hr/>
+                    <div class="forecast-data">
+                        <div class="day">WEN</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <hr/>
+                    <div class="forecast-data">
+                        <div class="day">THU</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <hr/>
+                    <div class="forecast-data">
+                        <div class="day">FRI</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <hr/>
+                    <div class="forecast-data">
+                        <div class="day">SAT</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                </div>
+                <div class="forecast-hourly">
+                    <div class="forecast-data">
+                        <div class="day">12am</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <div class="forecast-data">
+                        <div class="day">3am</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <div class="forecast-data">
+                        <div class="day">6am</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <div class="forecast-data">
+                        <div class="day">9am</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <div class="forecast-data">
+                        <div class="day">12pm</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <div class="forecast-data">
+                        <div class="day">3pm</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <div class="forecast-data">
+                        <div class="day">6pm</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
+                    </div>
+                    <div class="forecast-data">
+                        <div class="day">9pm</div>
+                        <span class="material-symbols-outlined forecast-icon">sunny</span>
+                        <div>65°/80°</div>
+                        <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
                     </div>
                 </div>
             </div>
-            <div class="location-content">
-                <div class="location-info">
-                    <div id="city">Saint Paul</div>
-                    <div id="state">, MN</div>
+            <div class="map">
+                <div class="map-content">
+                    <div class="map-header">
+                        <h1>Minnesota</h1>
+                    </div>
+                    <div class="map-image">
+                        <img src="https://www.cnet.com/a/img/resize/7a9328e12c8975d732174e7d256fef3d597f0fb1/hub/2022/05/31/b92237b4-a221-4f69-8ea4-efd6856a098c/gettyimages-807650596.jpg?auto=webp&fit=crop&height=675&width=1200">
+                    </div>
+                    <div class="map-data">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, qui non, porro, consectetur esse libero neque sed nisi blanditiis vel eaque! Voluptas reiciendis debitis aut, consequuntur consectetur odit voluptates quae!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo alias doloremque modi ea! Assumenda similique, eos sit facilis neque vero odio non hic id natus illo repudiandae nemo placeat!
+                        </p>
+                    </div>
+                    <button>More Info</button>
                 </div>
-                <div id="county">Ramsey County</div>
+            </div>
+            <div class="graph-content">
+
+            </div>
+            <div class="controller">
+
+            </div>
+            <div class="container1">
+        
+            </div>
+            <div class="container2">
+        
+            </div>
+            <div class="container3">
+        
+            </div>
+            <div class="container4">
+
+            </div>
+            <div class="scroll">
+            
             </div>
         </div>
-        <div class="weather-forecast">
-            <div class="forecast-header">
-                <span>Daily</span>
-                <div class="toggle">
-                    <span class="material-symbols-outlined toggle-icon">circle</span></div>
-                <span>Hourly</span>
-            </div>
-            <div class="forecast-daily active">
-                <div class="forecast-data">
-                    <div class="day">SUN</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <hr/>
-                <div class="forecast-data">
-                    <div class="day">MON</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <hr/>
-                <div class="forecast-data">
-                    <div class="day">TUS</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <hr/>
-                <div class="forecast-data">
-                    <div class="day">WEN</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <hr/>
-                <div class="forecast-data">
-                    <div class="day">THU</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <hr/>
-                <div class="forecast-data">
-                    <div class="day">FRI</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <hr/>
-                <div class="forecast-data">
-                    <div class="day">SAT</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-            </div>
-            <div class="forecast-hourly">
-                <div class="forecast-data">
-                    <div class="day">12am</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <div class="forecast-data">
-                    <div class="day">3am</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <div class="forecast-data">
-                    <div class="day">6am</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <div class="forecast-data">
-                    <div class="day">9am</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <div class="forecast-data">
-                    <div class="day">12pm</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <div class="forecast-data">
-                    <div class="day">3pm</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <div class="forecast-data">
-                    <div class="day">6pm</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-                <div class="forecast-data">
-                    <div class="day">9pm</div>
-                    <span class="material-symbols-outlined forecast-icon">sunny</span>
-                    <div>65°/80°</div>
-                    <div class="humid"><span class="material-symbols-outlined">humidity_mid</span>22%</div>
-                </div>
-            </div>
-        </div>
-        <div class="news">
-            <div class="news-content">
-                <div class="news-header">
-                    <h1>Weather News</h1>
-                </div>
-                <div class="news-image">
-                    <img src="https://www.cnet.com/a/img/resize/7a9328e12c8975d732174e7d256fef3d597f0fb1/hub/2022/05/31/b92237b4-a221-4f69-8ea4-efd6856a098c/gettyimages-807650596.jpg?auto=webp&fit=crop&height=675&width=1200">
-                </div>
-                <div class="news-data">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, qui non, porro, consectetur esse libero neque sed nisi blanditiis vel eaque! Voluptas reiciendis debitis aut, consequuntur consectetur odit voluptates quae!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo alias doloremque modi ea! Assumenda similique, eos sit facilis neque vero odio non hic id natus illo repudiandae nemo placeat!
-                    </p>
-                </div>
-                <button>More Info</button>
-            </div>
-        </div>
+        <footer>
+        
+        </footer>
     </div>
     <script src="./index.js"></script>
 </body>
